@@ -6,7 +6,27 @@
 </head>
 <body>
 
+<a href="{{ request.route_url('add') }}">Add</a>
+
 <h1>ToDos - List</h1>
+
+<table>
+
+    <tr>
+        <td>
+            <a href="{{ request.route_url('view', id='1') }}">First
+            </a>
+        </td>
+        <td>
+            <a href="{{ request.route_url('edit', id='1') }}">
+                edit
+            </a>
+            <a href="{{ request.route_url('delete', id='1') }}">
+                delete
+            </a>
+        </td>
+    </tr>
+</table>
 
 </body>
 </html>
