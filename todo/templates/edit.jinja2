@@ -9,5 +9,10 @@
 <h1>ToDos - Edit</h1>
 
 <p><em>ToDo: {{ view.current }}</em></p>
+<form method="POST">
+    <input name="new_title"/>
+    <input type="submit" name="form.submit"/>
+    <input type="submit" name="form.cancel" value="Cancel"/>
+</form>
 </body>
 </html>
