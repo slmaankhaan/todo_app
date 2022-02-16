@@ -7,12 +7,12 @@ requires = [
     'pyramid_sqlalchemy',
     'pyramid_tm'
 ]
-setup(name='todo',
+setup(name='mysite',
       install_requires=requires,
       entry_points="""\
       [paste.app_factory]
-      main = todo:main
+      main = mysite:main
       [console_scripts]
-      initialize_db = todo.scripts.initialize_db:main
+      initialize_db = mysite.scripts.initialize_db:main
       """
       )
