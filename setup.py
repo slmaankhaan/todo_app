@@ -12,5 +12,7 @@ setup(name='todo',
       entry_points="""\
       [paste.app_factory]
       main = todo:main
+      [console_scripts]
+      initialize_db = todo.scripts.initialize_db:main
       """
       )

@@ -16,4 +16,5 @@ def main(global_config, **settings):
     config.add_route('todos_view', '/todos/{id}')
     config.add_route('todos_edit', '/todos/{id}/edit')
     config.add_route('todos_delete', '/todos/{id}/delete')
+
     return config.make_wsgi_app()

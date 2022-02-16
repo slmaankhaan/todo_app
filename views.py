@@ -13,7 +13,7 @@ class ToDoSchema(colander.MappingSchema):
     title = colander.SchemaNode(colander.String())
 
 
-class MySite:
+class ToDO:
     def __init__(self, request):
         self.request = request
         self.schema = ToDoSchema()
