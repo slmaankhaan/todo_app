@@ -4,6 +4,7 @@ from pyramid.config import Configurator
 def main(global_config, **settings):
     config = Configurator(settings=settings)
     config.include('pyramid_jinja2')
+    config.include('pyramid_chameleon')
     config.add_static_view(name='static', path='todo:static')
     config.add_route('home', '/')
     config.add_route('todos_list', '/todos')

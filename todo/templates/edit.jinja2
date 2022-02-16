@@ -2,14 +2,8 @@
 {% block title %}ToDos Edit {% endblock %}
 {% block content %}
 
-    <h1>ToDos - Edit</h1>
+    <h1>ToDos - Edit <em>{{ todo.id }}</em></h1>
 
-    <p><em>ToDo: {{ view.current }}</em></p>
-
-    <form method="POST">
-        <input name="new_title"/>
-        <input type="submit"/>
-    </form>
-
+    <div>{{ edit_form | safe }}</div>
 {% endblock %}
 
