@@ -3,7 +3,9 @@ from setuptools import setup
 requires = [
     'pyramid',
     'pyramid_jinja2',
-    'deform>=2.0a2'
+    'deform>=2.0a2',
+    'pyramid_sqlalchemy',
+    'pyramid_tm'
 ]
 setup(name='todo',
       install_requires=requires,
