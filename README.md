@@ -1,9 +1,9 @@
 
 
 
-# Project Description
+# Task Mangement Application
 
-This repo contains code for ToDo applicaion developed 
+This repo contains code for Task Management applicaion developed 
 with python and pyramid framework.
 
 
